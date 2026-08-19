@@ -19,6 +19,32 @@ void movezeros(vector<int>&arr){
             j++;
         }
     }
+    
+    // T.C = O(n)
+    // S.C = O(1)
+} 
+
+void movezeros2(vector<int>&arr){
+    vector<int>temp;
+    int n = arr.size();
+
+    for(int i=0;i<n;i++){
+        if(arr[i] != 0){
+            temp.push_back(arr[i]);
+        }
+    }
+
+    for(int i=0;i<temp.size();i++){
+        arr[i]=temp[i];
+    }
+
+    
+    for(int i=temp.size();i<n;i++){
+        arr[i]=0;
+    }
+    // T.C = O(n)
+    // S.C = O(n)
+
 }
 
 int main(){
@@ -30,7 +56,7 @@ int main(){
         cin>>arr[i];
     }
    
-    movezeros(arr);
+    movezeros2(arr);
 
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
