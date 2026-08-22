@@ -56,7 +56,7 @@ int main(){
         cin>>arr[i];
     }
    
-    movezeros2(arr);
+    movezeros(arr);
 
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";

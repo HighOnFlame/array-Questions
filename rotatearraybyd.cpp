@@ -20,7 +20,7 @@ void rotatearraybyd(int arr[], int n, int d){
     
 }
 
-void rotatearraybyd2(int arr[], int n, int d){
+void rotatearraybyD2(int arr[], int n, int d){
     reverse(arr,arr+d);
     reverse(arr+d,arr+n);
     reverse(arr,arr+n);
@@ -40,7 +40,7 @@ int main()
     cin>>d;
     
 
-    rotatearraybyd2(arr, n, d);
+    rotatearraybyD2(arr, n, d);
 
     for (int i = 0; i < n; i++)
     {
