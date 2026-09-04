@@ -30,8 +30,7 @@ int majorityelement(vector<int> &arr, int n)
             count2++;
         }
     }
-    if (count2 > n / 2)
-    {
+    if (count2 > n / 2){
         return element;
     }
     return -1;
