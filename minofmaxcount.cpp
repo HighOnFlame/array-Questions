@@ -18,12 +18,12 @@ int minofmaxcount(vector<int> nums)
         mpp[nums[i]]++;
     }
 
-    int maxi = 0;
-    int answer = -1;
+    int maxi = 0;      //stores count
+    int answer = -1;   //stores number
 
     for (auto it : mpp)
     {
-        int number = it.first;
+        int number = it.first; 
         int count = it.second;
 
         if (count > maxi)
@@ -33,7 +33,6 @@ int minofmaxcount(vector<int> nums)
         }
         else if(count == maxi && number < answer){
             answer= number;
-
         }
 
         
